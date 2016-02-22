@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#009688</color>
+    <color name="colorPrimaryDark">#00796b</color>
+    <color name="colorAccent">#e91e63</color>
+    <color name="colorBackground">#e0f2f1</color>
+
+    <color name="candidate_normal">#FF000000</color>
+    <color name="candidate_recommended">#37474f</color>
+    <color name="candidate_other">#ff808080</color>
+    <color name="candidate_background">#78909c</color>
+
+    <color name="keyboard_background">#455a64</color>
+    <color name="keyboard_popup_background">#37474f</color>
+    <color name="key_text_color">#fff</color>
+</resources>
+<!--
+<color name="candidate_recommended">#FFE35900</color>-->

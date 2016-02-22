@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="To enable the Keyboard"
+        android:textStyle="bold|italic"
+        android:textSize="@dimen/user_title_text_size"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  Select “Enable Keyboard” on app >> Check “Secret Keyboard"
+        android:textSize="@dimen/user_text_text_size"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:textStyle="bold|italic"
+        android:textSize="18sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  Go to “Setting” >> “Language and Input Method” >> Check “Secret Keyboard”"
+        android:textSize="@dimen/user_text_text_size"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="After this, select “Switch Input Method” on app >> Select “Secret Keyboard” on pop up box."
+        android:textSize="@dimen/user_text_text_size"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="How to encrypt your text"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="30dp"
+        android:textSize="@dimen/user_title_text_size"/>
+
+
+    <ImageView
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/n_5"
+        android:layout_gravity="center"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/n_8"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="How to decrypt your text"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="20dp"
+        android:textSize="@dimen/user_title_text_size"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="  Decryption is also simple"
+        android:textSize="@dimen/user_text_text_size"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="At first copy the text you want to decrypt and "
+        android:textSize="@dimen/user_text_text_size"/>
+
+    <ImageView
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/n_9"
+        android:layout_gravity="center"
+        />
+    <Button
+        android:id="@+id/skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:layout_gravity="center"
+        android:text="Start"
+        android:textSize="@dimen/user_text_text_size"/>
+
+
+</LinearLayout>
+</ScrollView>
