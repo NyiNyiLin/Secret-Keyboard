@@ -7,7 +7,7 @@
 <LinearLayout
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:paddingTop="16dp"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
@@ -19,7 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Enable Keyboard "
-        android:textSize="@dimen/setting_text_size"/>
+        android:textAppearance="?android:textAppearanceListItem"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="1dp"
@@ -32,7 +32,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Switch Input Method "
-        android:textSize="@dimen/setting_text_size" />
+        android:textAppearance="?android:textAppearanceListItem"/>
 
 
     <TextView
@@ -47,7 +47,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Test Keyboard"
-        android:textSize="@dimen/setting_text_size" />
+        android:textAppearance="?android:textAppearanceListItem" />
 
     <TextView
         android:layout_width="match_parent"
@@ -62,7 +62,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Sound on Key Press"
-        android:textSize="@dimen/setting_text_size"
+        android:textAppearance="?android:textAppearanceListItem"
         android:textOff="OFF"
         android:textOn="ON"
         app:showText="false" />
@@ -80,7 +80,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Vibrate on Key Press"
-        android:textSize="@dimen/setting_text_size"
+        android:textAppearance="?android:textAppearanceListItem"
         android:textOff="OFF"
         android:textOn="ON"
         app:showText="false" />
@@ -97,7 +97,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="How to Use"
-        android:textSize="@dimen/setting_text_size"/>
+        android:textAppearance="?android:textAppearanceListItem"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="1dp"
@@ -111,7 +111,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Feedback"
-        android:textSize="@dimen/setting_text_size"/>
+        android:textAppearance="?android:textAppearanceListItem"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="1dp"
@@ -124,8 +124,8 @@
         android:id="@+id/About_Us"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="About Us"
-        android:textSize="@dimen/setting_text_size"/>
+        android:text="About"
+        android:textAppearance="?android:textAppearanceListItem"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="1dp"

@@ -69,17 +69,15 @@
     
     <Row android:rowEdgeFlags="bottom">
         <Key android:codes="-3" android:keyIcon="@drawable/sym_keyboard_done" 
-                android:keyWidth="15%p" android:keyEdgeFlags="left" />
-        <Key android:codes="-2" android:keyLabel="ABC" android:keyWidth="10%p" />
+                android:keyWidth="20%p" android:keyEdgeFlags="left" />
+        <Key android:codes="-2" android:keyLabel="ABC" android:keyWidth="20%p" />
         <!--
             android:codes: -101 is not a framework-defined key code but a key code for switching input method
         -->
-        <Key android:codes="-995" android:keyIcon="@drawable/sym_keyboard_language_switch"
-                android:keyWidth="10%p" />
+
         <Key android:codes="32" android:keyIcon="@drawable/sym_keyboard_space" android:keyWidth="30%p" 
                 />
-        <Key android:codes="-6" android:keyLabel="ကခ"
-            android:keyWidth="10%p" />
+
         <Key android:codes="8230" android:keyLabel="…" />
         <Key android:codes="-4" android:keyIcon="@drawable/sym_keyboard_return"
                 android:keyWidth="20%p" android:keyEdgeFlags="right" />

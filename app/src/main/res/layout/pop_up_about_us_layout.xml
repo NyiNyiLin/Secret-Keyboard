@@ -2,36 +2,62 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
-
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher"
+        android:layout_gravity="center"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginRight="24dp"
-        android:text="A product of UY Innovative Science Fair"
-        android:textSize="22dp"
-        android:textStyle="italic|bold"
+        android:text="Secret Keyboard"
         android:textColor="@color/colorPrimary"
-        />
+        android:gravity="center_horizontal"
+        android:textAppearance="?android:textAppearanceLarge"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginRight="24dp"
-        android:layout_marginBottom="20dp"
-        android:text="Property of Number 9"
-        android:textSize="21dp"
-        android:textStyle="bold"
-        />
+        android:text="version 1.0"
+        android:gravity="center_horizontal"
+        android:textAppearance="?android:textAppearanceMedium"/>
     <TextView
+        android:layout_marginTop="20dp"
         android:id="@+id/About_Us_Test"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
         android:layout_marginBottom="20dp"
-        android:textSize="20dp"/>
+        android:lineSpacingMultiplier="1.2"
+        android:textAppearance="?android:textAppearanceSmall"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="20dp"
+        android:text="Property of 'Number 9'."
+        android:textStyle="italic|bold"
+        android:textAppearance="?android:textAppearanceMedium"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="*All rights reserved*"
+        android:gravity="center_horizontal"/>
 
 </LinearLayout>
+<!--
+<TextView
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginTop="20dp"
+android:layout_marginLeft="24dp"
+android:layout_marginRight="24dp"
+android:text="A product of Yangon University Innovative Science Fair"
+android:textSize="20sp"
+android:textStyle="italic|bold"
+android:textColor="@color/colorPrimary"
+    />-->

@@ -135,7 +135,7 @@ public class settingFragment extends android.support.v4.app.Fragment{
             public void onClick(View v) {
                 Intent i = new Intent(Intent.ACTION_SEND);
                 i.setType("message/rfc822");
-                i.putExtra(Intent.EXTRA_EMAIL  , new String[]{  "nyinyilinyu@gmail.com"});
+                i.putExtra(Intent.EXTRA_EMAIL  , new String[]{  "nyinyilin.dev@gmail.com"});
                 i.putExtra(Intent.EXTRA_SUBJECT, "Secret Keyboard");
                 //i.putExtra(Intent.EXTRA_TEXT   , "Testing");
                 try {
@@ -217,8 +217,10 @@ public class settingFragment extends android.support.v4.app.Fragment{
 
         TextView aboutUsTest=(TextView) promptView.findViewById(R.id.About_Us_Test);
 
-        String str2="* Aye Myat Thu\n* Aye Sin Lwin\n* Ei Thinzar Phyo\n* Kaung Satt Linn\n* Nyi Nyi Lin\n* Phyo Thaw Kaung\n* Soe Thadar Hpyu\n* Win Lei Thwe\n";
-        aboutUsTest.setText(str2);
+        //String str2="* Aye Myat Thu\n* Aye Sin Lwin\n* Ei Thinzar Phyo\n* Kaung Satt Linn\n* Nyi Nyi Lin\n* Phyo Thaw Kaung\n* Soe Thadar Hpyu\n* Win Lei Thwe\n";
+        String str3 = "*\tIn this keyboard, you can encrypt and decrypt your text.\n*\tYou can also set 'Long-press word' in each character.";
+
+        aboutUsTest.setText(str3);
 
         alert.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int whichButton) {
