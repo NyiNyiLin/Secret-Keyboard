@@ -123,10 +123,10 @@ public class SoftKeyboard extends InputMethodService implements KeyboardView.OnK
         mQwertyKeyboard = new NyiKeyBoard(this, R.xml.qwerty);
         mSymbolsKeyboard = new NyiKeyBoard(this, R.xml.symbols);
         mSymbolsShiftedKeyboard = new NyiKeyBoard(this, R.xml.symbols_shift);
-        mEncryptKeyboard=new NyiKeyBoard(this,R.xml.qwerty_encrypt);
-        mQwerty_Myanmar_Keyboard=new NyiKeyBoard(this,R.xml.qwerty_myanmar);
-        mQwerty_Myanmar_Shift_Keyboard=new NyiKeyBoard(this,R.xml.qwerty_myanmar_shift);
-        mMyanmar_Symbol_Keyboard=new NyiKeyBoard(this,R.xml.myanmar_symbols);
+        mEncryptKeyboard=new NyiKeyBoard(this, R.xml.qwerty_encrypt);
+        mQwerty_Myanmar_Keyboard=new NyiKeyBoard(this, R.xml.qwerty_myanmar);
+        mQwerty_Myanmar_Shift_Keyboard=new NyiKeyBoard(this, R.xml.qwerty_myanmar_shift);
+        mMyanmar_Symbol_Keyboard=new NyiKeyBoard(this, R.xml.myanmar_symbols);
     }
 
 
@@ -206,8 +206,8 @@ public class SoftKeyboard extends InputMethodService implements KeyboardView.OnK
                 //setKeyboard(mQwertyKeyboard);
                 mCurKeyboard = mQwertyKeyboard;
                 mCurKeyboard.setShifted(false);
-                caps=false;
-                encrypt=false;
+                caps = false;
+                encrypt = false;
                 //updateShiftKeyState(attribute);
         }
         mCurKeyboard.setImeOptions(getResources(), attribute.imeOptions);
@@ -240,10 +240,10 @@ public class SoftKeyboard extends InputMethodService implements KeyboardView.OnK
         InputConnection ic = getCurrentInputConnection();
 
         //For key press sound
-        if(db.getCustomCodebyKeyCode(-999)==1) playClick(primaryCode);
+        if(db.getCustomCodebyKeyCode(-999) == 1) playClick(primaryCode);
         
         //For vibrate
-        if(db.getCustomCodebyKeyCode(-998)==1) vibrate();
+        if(db.getCustomCodebyKeyCode(-998) == 1) vibrate();
 
         //Aftering pasting a data, candicate view has to be clear
         if(paste==0 ) {
@@ -251,7 +251,7 @@ public class SoftKeyboard extends InputMethodService implements KeyboardView.OnK
             updateCandicate();
             paste=1;
         }
-        else if(encrypt==false) setCandidatesViewShown(false);
+        else if(encrypt == false) setCandidatesViewShown(false);
         
         switch(primaryCode){
             case -997:
@@ -267,16 +267,20 @@ public class SoftKeyboard extends InputMethodService implements KeyboardView.OnK
                 kv.invalidateAllKeys();
 
                 break;
+
             case -32:
                 imeManager.showInputMethodPicker();
                 break;
+
             case -995:
                 imeManager.showInputMethodPicker();
                 break;
+
             case -996:
                 getPasteData();
                 setCandidatesViewShown(true);
                 break;
+            
             case Keyboard.KEYCODE_DELETE :
                 ic.deleteSurroundingText(1, 0);
                 if(mComposing.length()>1){
@@ -287,25 +291,26 @@ public class SoftKeyboard extends InputMethodService implements KeyboardView.OnK
                     updateCandicate();
                 }
                 break;
+
             case Keyboard.KEYCODE_SHIFT:
                 //shift_count=shift_count+1;
-                if(shift_count ==1) {
+                if(shift_count == 1) {
                     caps = !caps;
-                    shift_count =2;
+                    shift_count = 2;
                 }
-                else if(shift_count ==2){
+                else if(shift_count == 2){
                     caps=true;
                     shift_count =3;
                 }
-                else if(shift_count ==3){
+                else if(shift_count == 3){
                     caps=false;
                     shift_count =1;
                 }
-                if(mCurKeyboard==mQwertyKeyboard){
+                if(mCurKeyboard == mQwertyKeyboard){
                     mCurKeyboard.setShifted(caps);
                     kv.invalidateAllKeys();
                 }
-                else if(mCurKeyboard==mEncryptKeyboard){
+                else if(mCurKeyboard == mEncryptKeyboard){
                     mCurKeyboard.setShifted(caps);
                     kv.invalidateAllKeys();
             }
@@ -373,7 +378,7 @@ public class SoftKeyboard extends InputMethodService implements KeyboardView.OnK
                     }
                 }
 
-                else if(primaryCode<=-97 && primaryCode >=-122){
+                else if(primaryCode <= -97 && primaryCode >= -122){
                     String hidden=db.getTextByKeyCustomID(primaryCode);
                     ic.commitText(hidden, 1);
                     mComposing.append(hidden);
@@ -395,6 +400,7 @@ public class SoftKeyboard extends InputMethodService implements KeyboardView.OnK
                         temp=db.getEncryptTextByKeyID(primaryCode).toUpperCase();
                         mComposing.append(String.valueOf(code).toUpperCase());
                     }
+
                     else {
                         temp = db.getEncryptTextByKeyID(primaryCode);
                         mComposing.append(String.valueOf(code));
@@ -408,12 +414,8 @@ public class SoftKeyboard extends InputMethodService implements KeyboardView.OnK
                     mComposing.append(String.valueOf(code));
                     updateCandicate();
                     ic.commitText(String.valueOf(code), 1);
-
-
                 }
-
         }
-
     }
 
     @Override

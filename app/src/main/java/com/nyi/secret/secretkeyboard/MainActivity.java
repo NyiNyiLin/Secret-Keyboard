@@ -59,10 +59,6 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.setupWithViewPager(viewPager);
         viewPager.setPageTransformer(true, new ZoomOutPageTransformer());
 
-
-
-
-
     }
 
 }
